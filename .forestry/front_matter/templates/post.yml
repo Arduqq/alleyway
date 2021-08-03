@@ -31,3 +31,5 @@ fields:
   type: tag_list
   default: []
   label: category
+pages:
+- _posts/lyonid-ventuswill.md
