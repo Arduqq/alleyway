@@ -1,4 +1,33 @@
 ---
 label: post
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: name
+- name: owner
+  type: text
+  config:
+    required: false
+  label: owner
+- name: image
+  type: text
+  config:
+    required: false
+  label: image
+- name: link
+  type: text
+  config:
+    required: false
+  label: link
+- name: concept
+  type: text
+  config:
+    required: false
+  label: concept
+- name: category
+  type: tag_list
+  default: []
+  label: category
