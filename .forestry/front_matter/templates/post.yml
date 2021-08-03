@@ -32,4 +32,5 @@ fields:
   default: []
   label: category
 pages:
+- _posts/lyonid-ferdinante.md
 - _posts/lyonid-ventuswill.md
