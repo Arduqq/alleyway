@@ -6,6 +6,8 @@
         display: block;
         text-align: center;
         width: 100%;
+        margin-top: 12vh;
+        margin-bottom: 6vh;
     }
 
     .site-title {
@@ -15,13 +17,108 @@
         font-family: $head-font-family;
     }
 
-    ´ .site-nav {
+    .site-nav {
         @include relative-font-size(2);
         background-color: black;
         display: block;
         padding: 3vw;
         line-height: $base-line-height * $base-font-size * 1;
 
+        @include media-query($on-laptop) {
+            @include relative-font-size(4);
+        }
+    }
+
+    .date {
+        display: inline-block;
+        background: $text-color;
+        color:rgb(255, 242, 242);
+        padding: 1vh 1vw;
+        font-family: $head-font-family;
+    }
+
+    .limelight {
+        border: solid 5px $text-color;
+        box-shadow: 15px 15px 0 0px $shadow-color;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        mix-blend-mode: multiply;
+        padding: 5vh 2.5vw;
+        background:$background-color;
+        .winner-info {
+            flex: 1 1 60%;
+            .owner  {
+                display: inline-block;
+                text-align: right;
+                font-style: italic;
+            }
+            .name {
+                line-height: 10vh;
+                font-family: $head-font-family;
+                display: block;
+                @include relative-font-size(4);
+    
+            }
+        }
+        figure {
+            align-self: center;
+            flex: 1 1 40%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            a {
+                flex: 1 1 90%;
+                margin: 0 auto;
+                img {
+                    transition: .2s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        position: fixed;
+        font-family: $head-font-family;
+        flex-wrap: wrap;
+        flex-direction: row;
+        left: 0; right: 0; top: 0;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;   
+        @include relative-font-size(2);
+        a {
+            text-align: center;
+            display: block;
+            background: $text-color;
+            color: rgb(255, 242, 242);
+            height: 10vh;
+            flex: 1 1 25%;
+            overflow: hidden;
+            transition: 0.2s;
+            line-height: 10vh;
+            span {
+                @include relative-font-size(1.6);
+
+                @include media-query($on-laptop) {
+                    @include relative-font-size(2.6);
+                }
+            }
+            &:hover {
+                text-decoration: none;
+                line-height: 2.9vh;
+                background: lighten($brand-color,50%);
+                font-size: 0;
+                color: white;
+            }
+        }
         @include media-query($on-laptop) {
             @include relative-font-size(4);
         }
@@ -38,11 +135,7 @@
         height: 15vh;
         color: rgba(0, 0, 0, 0.5);
         background-size: 200% 200%;
-        background: repeating-linear-gradient(110deg,
-                lighten($brand-color,70%),
-                lighten($brand-color,70%) 50px,
-                lighten($alt-color,70%) 50px,
-                lighten($alt-color,70%) 100px);
+        background: $monthly-gradient;
         @include relative-font-size(3);
         transition: .3s;
         @include media-query($on-laptop) {
@@ -99,11 +192,13 @@
     }
 
     .page-heading {
-        @include relative-font-size(5);
+        margin-top: $spacing-unit*3;
+        font-family: $head-font-family;
+        @include relative-font-size(3);
     }
 
     .post-list-heading {
-        @include relative-font-size(5);
+        @include relative-font-size(3);
     }
 
     .post-list {
@@ -112,14 +207,32 @@
             width: 100%;
         }
 
+        &.offerings {
+            border-left: lighten($brand-color, 70%) 5px solid;
+            border-right: lighten($brand-color, 70%) 5px solid;
+        }
+        &.legends {
+            border-left: $shadow-color 5px solid;
+            border-right: $shadow-color 5px solid;
+            >li:hover {
+                background-color: lighten($shadow-color, 16%);
+                span,
+                a,
+                figure {
+                    background-color: transparent;
+                }
+            }
+            >li:nth-child(2n+2):hover {
+                background-color: lighten($shadow-color, 10%);
+            }
+        }
+
         @include relative-font-size(2);
         list-style: none;
-        font-family: $head-font-family;
+        font-family: $base-font-family;
         padding: 2vh 1vw;
         margin: 0 auto;
         width: 80%;
-        border-left: lighten($brand-color, 70%) 5px solid;
-        border-right: lighten($brand-color, 70%) 5px solid;
         margin-bottom: 10vh;
 
         >li:first-child {
@@ -128,10 +241,13 @@
         }
 
         >li:nth-child(2n+2):hover {
-            background-color: lighten($alt-color, 70%);
+            background-color: lighten($alt-color, 75%);
         }
 
         >li {
+            @include media-query($on-laptop) {
+                @include relative-font-size(1.7);
+            }
             @include relative-font-size(1.5);
             display: flex;
             flex-direction: row;
@@ -139,23 +255,60 @@
             padding: 1vh 0.5vw;
             font-family: $data-font-family;
             height: 13vh;
+            text-align: center;
             align-items: center;
+            transition: .2s;
+            overflow: hidden;
 
-            img {
-                height: 10vh;
+            figure{
+                height: 10vh; width: 100%; overflow: hidden;
+                img { 
+                    mix-blend-mode: multiply; 
+                    margin-top: -40%;
+                    transition: .2s;
+                    &:hover {
+                        transform: rotate(20deg);
+                    }
+                }
             }
 
             span,
             a,
             figure {
                 flex: 1 1 20%;
+                background-color: $background-color;
+                mix-blend-mode: multiply;
+            }
+
+
+            ~ p {
+                display: none;
+                @include relative-font-size(1);
             }
 
 
         }
 
         >li:hover {
-            background-color: lighten($brand-color, 70%);
+            background-color: lighten($brand-color, 75%);
+            span,
+            a,
+            figure {
+                background-color: transparent;
+            }
+        }
+
+        >li:focus {
+            height: 30vh;
+            figure {
+                height: 100%;
+                img {
+                    margin-top: 0;
+                }
+            }
+            ~ p {
+                display: block;
+            }
         }
 
     }

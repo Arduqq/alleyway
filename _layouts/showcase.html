@@ -1,0 +1,39 @@
+--- 
+layout: default 
+--- 
+
+<div class="site-header">
+    <h1 class="site-title">{{ site.title }}</h1>
+    <h1 >The Limelight</h1> 
+    </div>
+    {% for post in site.categories.limelight limit:1 %}
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    <div class="limelight">
+        <figure>
+            <a target="__blank" href="{{ post.link }}">
+                <img src="{{ post.image }}">
+            </a>
+        </figure>
+        <div class="winner-info">
+            <span class="name">{{ post.name }}</span>
+            <span class="owner">cared for lovingly by <a target="__blank" href="https://subeta.net/users/{{ post.owner }}">{{ post.owner }}</a></span>
+            <p>{{ post.excerpt }}</p>
+            <a target="__blank" href="https://subeta.net/explore/gifts.php/choose/random?user={{ post.owner }}">> support {{ post.owner }}</a> 
+        </div>
+    </div>
+    {% endfor %}
+    <h1 class="page-heading">Former Legends</h1>
+    <ul class="post-list legends">
+        <li><span>pet</span> <span>name</span> <span>owner</span> <span>link</span> <span>love</span></li>
+        {%- for post in site.categories.limelight -%}
+        <li tabindex="{{ forloop.index }}">
+            <figure><img src="{{ post.image }}"></figure>
+            <span>{{ post.name }}</span>
+            <a target="__blank" href="https://subeta.net/users/{{ post.owner }}">{{ post.owner }}</a>
+            <a target="__blank" href="{{ post.link }}">visit </a>
+            <a target="__blank" href="https://subeta.net/explore/gifts.php/choose/random?user={{ post.owner }}">send love</a>  
+        </li>
+        <p>{{post.excerpt }}</p>
+        {%- endfor -%}
+    </ul>
+    </div>
