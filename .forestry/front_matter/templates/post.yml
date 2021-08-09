@@ -27,7 +27,22 @@ fields:
   config:
     required: false
   label: concept
+- name: cw
+  type: text
+  config:
+    required: false
+  label: cw
 - name: category
   type: tag_list
   default: []
   label: category
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
