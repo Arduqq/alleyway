@@ -1,5 +1,5 @@
     /* Site Header */
-
+    
     .site-header {
         min-height: $spacing-unit * 1.865;
         max-height: 70vh;
@@ -9,34 +9,33 @@
         margin-top: 12vh;
         margin-bottom: 6vh;
     }
-
+    
     .site-title {
         @include relative-font-size(10);
         line-height: $base-line-height * $base-font-size * 5;
         letter-spacing: 2px;
         font-family: $head-font-family;
     }
-
+    
     .site-nav {
         @include relative-font-size(2);
         background-color: black;
         display: block;
         padding: 3vw;
         line-height: $base-line-height * $base-font-size * 1;
-
         @include media-query($on-laptop) {
             @include relative-font-size(4);
         }
     }
-
+    
     .date {
         display: inline-block;
         background: $text-color;
-        color:rgb(255, 242, 242);
+        color: rgb(255, 242, 242);
         padding: 1vh 1vw;
         font-family: $head-font-family;
     }
-
+    
     .limelight {
         border: solid 5px $text-color;
         box-shadow: 15px 15px 0 0px $shadow-color;
@@ -47,10 +46,10 @@
         margin: 0 auto;
         mix-blend-mode: multiply;
         padding: 5vh 2.5vw;
-        background:$background-color;
+        background: $background-color;
         .winner-info {
             flex: 1 1 60%;
-            .owner  {
+            .owner {
                 display: inline-block;
                 text-align: right;
                 font-style: italic;
@@ -60,7 +59,6 @@
                 font-family: $head-font-family;
                 display: block;
                 @include relative-font-size(4);
-    
             }
         }
         figure {
@@ -81,18 +79,20 @@
             }
         }
     }
-
+    
     nav {
         display: flex;
         position: fixed;
         font-family: $head-font-family;
         flex-wrap: wrap;
         flex-direction: row;
-        left: 0; right: 0; top: 0;
+        left: 0;
+        right: 0;
+        top: 0;
         margin: 0 auto;
         align-items: center;
         justify-content: center;
-        z-index: 100;   
+        z-index: 100;
         @include relative-font-size(2);
         a {
             text-align: center;
@@ -106,7 +106,6 @@
             line-height: 10vh;
             span {
                 @include relative-font-size(1.6);
-
                 @include media-query($on-laptop) {
                     @include relative-font-size(2.6);
                 }
@@ -114,7 +113,7 @@
             &:hover {
                 text-decoration: none;
                 line-height: 2.9vh;
-                background: lighten($brand-color,50%);
+                background: lighten($brand-color, 50%);
                 font-size: 0;
                 color: white;
             }
@@ -123,7 +122,7 @@
             @include relative-font-size(4);
         }
     }
-
+    
     .theme {
         display: block;
         padding: 2vh 1vw;
@@ -142,13 +141,13 @@
             @include relative-font-size(7);
             width: 100%;
         }
-        
     }
+    
     .theme:hover {
         color: rgb(0, 0, 0);
         border-radius: 50px;
     }
-
+    
     .pitch {
         @include media-query($on-laptop) {
             @include relative-font-size(2);
@@ -158,14 +157,13 @@
         padding: 2vh 1vw;
         margin: 0 auto;
         width: 80%;
-
         border-left: lighten($brand-color, 70%) 5px dotted;
         border-right: lighten($brand-color, 70%) 5px dotted;
     }
-
-
+    
     .npc {
-        width: 100%; height: 50vh;
+        width: 100%;
+        height: 50vh;
         overflow: hidden;
         background: black;
         float: left;
@@ -175,38 +173,35 @@
             height: 90vh;
             margin: 0 auto;
         }
-        
     }
-
+    
     .site-nav a {
         display: block;
         float: left;
         padding: 2vh 2vw;
     }
-
     /* Page Content */
-
+    
     .page-content {
         padding: $spacing-unit 0;
         flex: 1;
     }
-
+    
     .page-heading {
         margin-top: $spacing-unit*3;
         font-family: $head-font-family;
         @include relative-font-size(3);
     }
-
+    
     .post-list-heading {
         @include relative-font-size(3);
     }
-
+    
     .post-list {
         @include media-query($on-laptop) {
             @include relative-font-size(2);
             width: 100%;
         }
-
         &.offerings {
             border-left: lighten($brand-color, 70%) 5px solid;
             border-right: lighten($brand-color, 70%) 5px solid;
@@ -226,7 +221,6 @@
                 background-color: lighten($shadow-color, 10%);
             }
         }
-
         @include relative-font-size(2);
         list-style: none;
         font-family: $base-font-family;
@@ -234,16 +228,13 @@
         margin: 0 auto;
         width: 80%;
         margin-bottom: 10vh;
-
         >li:first-child {
             font-weight: 800;
             @include relative-font-size(2);
         }
-
         >li:nth-child(2n+2):hover {
             background-color: lighten($alt-color, 75%);
         }
-
         >li {
             @include media-query($on-laptop) {
                 @include relative-font-size(1.7);
@@ -259,11 +250,12 @@
             align-items: center;
             transition: .2s;
             overflow: hidden;
-
-            figure{
-                height: 10vh; width: 100%; overflow: hidden;
-                img { 
-                    mix-blend-mode: multiply; 
+            figure {
+                height: 10vh;
+                width: 100%;
+                overflow: hidden;
+                img {
+                    mix-blend-mode: multiply;
                     margin-top: -40%;
                     transition: .2s;
                     &:hover {
@@ -271,7 +263,6 @@
                     }
                 }
             }
-
             span,
             a,
             figure {
@@ -279,16 +270,14 @@
                 background-color: $background-color;
                 mix-blend-mode: multiply;
             }
-
-
-            ~ p {
+            ~p {
                 display: none;
                 @include relative-font-size(1);
+                @include media-query($on-laptop) {
+                    @include relative-font-size(2);
+                }
             }
-
-
         }
-
         >li:hover {
             background-color: lighten($brand-color, 75%);
             span,
@@ -297,8 +286,10 @@
                 background-color: transparent;
             }
         }
-
         >li:focus {
+            @include media-query($on-laptop) {
+                height: 15vh;
+            }
             height: 30vh;
             figure {
                 height: 100%;
@@ -306,97 +297,84 @@
                     margin-top: 0;
                 }
             }
-            ~ p {
+            ~p {
                 display: block;
             }
         }
-
     }
-
+    
     .post-meta {
         font-size: $small-font-size;
         mix-blend-mode: difference;
         line-height: 1;
-
         @include media-query($on-laptop) {
             @include relative-font-size(2);
         }
     }
-
+    
     .post-link {
         display: block;
         @include relative-font-size(3);
     }
-
     /* Posts */
-
+    
     .post-cover {
         max-width: 50%;
         width: 50vw;
         float: left;
         margin: $spacing-unit;
         object-fit: contain;
-
         @include media-query($on-laptop) {
             visibility: hidden;
             width: 0px;
             transition: .3s;
         }
     }
-
+    
     .post-header {
         margin-top: $spacing-unit;
     }
-
+    
     .post-title {
         @include relative-font-size(5);
         letter-spacing: -1px;
         line-height: 1;
         font-family: $head-font-family;
-
         @include media-query($on-laptop) {
             @include relative-font-size(7);
         }
     }
-
+    
     .post-content {
         z-index: -5;
         padding: $spacing-unit*3;
         margin: $spacing-unit*3 $spacing-unit $spacing-unit $spacing-unit;
-
         h2 {
             @include relative-font-size(2);
-
             @include media-query($on-laptop) {
                 @include relative-font-size(5);
             }
         }
-
         h3 {
             @include relative-font-size(1.625);
-
             @include media-query($on-laptop) {
                 @include relative-font-size(4);
             }
         }
-
         h4 {
             @include relative-font-size(1.25);
-
             @include media-query($on-laptop) {
                 @include relative-font-size(3.5);
             }
         }
-
         @include media-query($on-laptop) {
             @include relative-font-size(3);
             background: black;
             color: white;
         }
     }
-
     /* Event Log */
-
+    
     .alert {
         transition: .1s;
         padding: 2px;
@@ -404,59 +382,52 @@
         background: black;
         color: $brand-color;
         box-shadow: 1px 1px 1px 1px #523d66;
-
         @include media-query($on-laptop) {
             @include relative-font-size(4);
         }
     }
-
+    
     .alert:hover {
         color: rgb(249, 77, 255);
         letter-spacing: 2px;
         padding: 5px;
         cursor: pointer;
     }
-
     /* Footer */
-
+    
     .site-footer {
         @include relative-font-size(1);
         color: white;
         margin-top: $spacing-unit * 4;
         background-color: black;
         padding: $spacing-unit *4;
-
         @include media-query($on-laptop) {
             @include relative-font-size(.3);
         }
     }
-
     /* About Page */
-
+    
     .about {
         padding: $spacing-unit;
         margin-top: $spacing-unit;
         @include relative-font-size(1.5);
         background: black;
-
         @include media-query($on-laptop) {
             @include relative-font-size(3);
         }
     }
-
+    
     .about p {
         margin-bottom: $spacing-unit
     }
-
     /* Animation */
-
     /* Misc. */
-
+    
     .hidden {
         transform: translate(0, -200vh);
         opacity: 0;
     }
-
+    
     .reopened {
         transform: translate(0, 0);
         opacity: 1;
