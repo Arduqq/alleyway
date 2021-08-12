@@ -210,17 +210,33 @@ nav {
 }
 
 .npc {
-    width: 100%;
-    height: 50vh;
-    overflow: hidden;
-    background: black;
-    float: left;
-    border-radius: 50px;
-    margin-bottom: 10vh;
-    img {
-        height: 90vh;
-        margin: 0 auto;
+    @include media-query($on-laptop) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        @include relative-font-size(2);
     }
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    @include relative-font-size(.6);
+    img {
+        float: left;
+        height: 100%;
+        margin-right: 50px;
+    }
+    span {
+        padding: 2vh 1vw;
+        background: #e8e8e8;
+        display: block;
+        color: lighten($text-color, 40%);
+    }
+}
+
+ol li h3 {
+    font-weight: 800;
 }
 
 .site-nav a {
