@@ -42,14 +42,5 @@ fields:
   config:
     required: false
   label: cw
-- name: concept
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: concept
 pages:
 - _posts/09-07-2021-trin-kudzu.md
