@@ -11,8 +11,10 @@ fields:
 - type: text
   name: owner
   label: owner
-- type: file
-  name: image
+- name: image
+  type: text
+  config:
+    required: false
   label: image
 - type: text
   name: link
