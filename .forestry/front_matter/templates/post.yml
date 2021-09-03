@@ -22,20 +22,6 @@ fields:
   config:
     required: false
   label: link
-- name: concept
-  type: text
-  config:
-    required: false
-  label: concept
-- name: cw
-  type: text
-  config:
-    required: false
-  label: cw
-- name: category
-  type: tag_list
-  default: []
-  label: category
 - name: date
   type: datetime
   label: date
@@ -46,3 +32,13 @@ fields:
     time_format: 
     display_utc: false
   default: now
+- name: category
+  type: text
+  config:
+    required: false
+  label: category
+- name: cw
+  type: text
+  config:
+    required: false
+  label: cw
