@@ -6,5 +6,6 @@ image: https://img.subeta.net/pets/irion_nuclear.png
 link: https://subeta.net/petinfo.php?petid=671280
 category: limelight
 cw: ''
+layout: post
 
 ---
