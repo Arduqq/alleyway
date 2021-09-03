@@ -9,3 +9,4 @@ category: limelight
 cw: ''
 
 ---
+Sometimes there are papers nailed into the trunks in the forest. We don't know who put them there. Sometimes they're warnings. Sometimes they're completely blank. Sometimes the mud turns red. Sometimes people decide to go into the forest anyway. Sometimes they don't come back.
