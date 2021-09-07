@@ -120,6 +120,7 @@ form {
             margin: 0 auto;
             img {
                 transition: .2s;
+                mix-blend-mode: multiply;
                 &:hover {
                     transform: scale(1.1);
                 }

@@ -2,8 +2,10 @@
 // Define defaults for each variable.
 $base-font-family: 'Vollkorn',
 italic;
-$head-font-family: 'Staatliches', serif;
-$data-font-family: 'Georama', sans-serif;
+$head-font-family: 'Staatliches',
+serif;
+$data-font-family: 'Georama',
+sans-serif;
 $base-font-size: 1.3vw !default;
 $base-font-weight: 300 !default;
 $small-font-size: $base-font-size * 0.875 !default;
@@ -11,15 +13,11 @@ $base-line-height: 1.5 !default;
 $spacing-unit: 1vw !default;
 $text-color: rgb(24, 24, 24) !default;
 $background-color: rgb(248, 248, 248) !default;
-$brand-color: rgb(0, 81, 95) !default;
-$alt-color: rgb(95, 0, 87) !default;
+$brand-color: rgb(33, 73, 37) !default;
+$alt-color: rgb(82, 72, 82) !default;
 $shadow-color: rgb(247, 137, 137) !default;
 $grey-color: #828282 !default;
-$monthly-gradient: repeating-linear-gradient(110deg,
-        lighten($brand-color,70%),
-        lighten($brand-color,70%) 50px,
-        lighten($alt-color,70%) 50px,
-        lighten($alt-color,70%) 100px) !default;
+$monthly-gradient: repeating-linear-gradient(110deg, lighten($brand-color, 70%), lighten($brand-color, 70%) 50px, lighten($alt-color, 70%) 50px, lighten($alt-color, 70%) 100px) !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark: darken($grey-color, 25%) !default;
 $table-text-align: left !default;

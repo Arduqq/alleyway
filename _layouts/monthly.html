@@ -1,20 +1,19 @@
 --- 
-layout: default 
+    layout: default 
 ---
 
 <div class="site-header">
     <h1 class="site-title">{{ site.title }}</h1>
     <h1>Monthly Offerings</h1>
 </div>{{ content }} {%- if site.posts.size > 0 -%}
-<h1 class="site-header theme">Euphoria</h1>
+<h1 class="site-header theme">Creature</h1>
 <p class="pitch">
-    Euphoria is a prevalent feeling that we all have felt in different contexts of our lives. Make your pets shine, burn them up, make them rise again. What does euphoria mean to you? How is it part of our society? What food is it that just makes you full
-    of joy? Does euphoria and dysphoria shape identity and is their interplay a desire we all have? What gives you the drive to love and embrace and what makes us eager to learn from our experiences?
+    We do love a good creature feature and with spooky season coming up, let's showcase our favourite creatures. Show us your eerie little OC. Your feral beast, your shy mystical spirit. Vengeful ghosts, tragic cryptids and other wonderful beings!
 </p>
 
 <ul class="post-list offerings">
     <li><span>pet</span> <span>name</span> <span>owner</span> <span>link</span> <span>love</span></li>
-    {%- for post in site.categories.euphoria -%}
+    {%- for post in site.categories.creature -%}
     <li tabindex="{{ forloop.index }}">
         <figure><img src="{{ post.image }}"></figure>
         <span>{{ post.name }}</span>
