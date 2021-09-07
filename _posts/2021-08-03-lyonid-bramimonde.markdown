@@ -8,4 +8,4 @@ date: 2021-08-03T17:10:45.000+02:00
 category: creature
 
 ---
-In a realm that would harbour the entirety of emotions, Herbstvald is the most inviting of the Välder. Aside from the warm breeze, the sweet scent and the beautiful, fluid-like clouds that would roam the sky every now and then, Atalante, the guardian of the thicket will wander the lands. Herbstvald manifests any sensation of eagerness in a nest that would slowly treasure an egg of euphoria. Where Atalante would take these eggs is unknown, yet their hatchlings are said to be of divine nature.
+After dragons have desperately struck humankind with their enending rage, heroes would rise equipped with the most dangerous of weaponry. This poor soul took it upon themselves to seal this power forever, for no one to ever use it again. Creating their ow domain, Bramimonde lost not only their friends, but themselves. This creature is inspired by Bramimond from Fire Emblem 7. I always loved the idea of loss and what comes with utmost dedication and it was the first real "experiment" I conducted with pet profiles! 
