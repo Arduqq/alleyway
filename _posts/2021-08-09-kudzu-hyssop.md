@@ -2,7 +2,7 @@
 layout: post
 name: Hyssop
 owner: Laur
-image: https://subeta.net/petinfo.php?petid=786787
+image: https://i.imgur.com/YXEHhTe.png
 link: https://subeta.net/petinfo.php?petid=786787
 date: 2021-09-07 22:00:00 +0000
 category: creature
