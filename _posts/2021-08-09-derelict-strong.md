@@ -5,7 +5,7 @@ owner: Derelict
 image: https://pets.subeta.net/448858.5by3jqq8uy.png
 link: https://subeta.net/pets/Derelict/Strong
 date: 2021-09-07 22:00:00 +0000
-category: monthly
+category: creature
 cw: body horror, violence
 
 ---
