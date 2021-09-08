@@ -4,10 +4,9 @@ name: Jamie
 owner: Santiago
 image: https://imagizer.imageshack.com/img923/6531/NlL1H6.jpg
 link: "\r\n\r\nhttps://subeta.net/petinfo.php?petid=3455241"
-date: 2021-09-24 22:00:00 +0000
+date: 2021-09-24T22:00:00.000+00:00
 category: limelight
 cw: ''
 
 ---
-
 Jamie is a young man stranded on a strange island together with a small group of people who seem to be of same age. The group is stranded on their own with only two backpacks containing a few rations, a pair of combat knives, blankets, flint and tinder. Nobody remembers how they landed on the island. They seem to know each other, despite the fact that most of their memories were purged. Jamie quickly realizes that the others do not really like him and want to be rid of him, so he keeps his distance while also depending on them for survival. He keeps quiet about the strange tattoos suddenly appearing on his right arm and back, something he's sure he did not have before, so as not to alert the group. In contrast to the others, Jamie is not very sporty and a bit chubby. He is a nuisance to the rest of the group, who are all athletic, and in Jamie’s eyes, beautiful. Kira is the only one who takes pity on him and decides to leave him a knife when the rest of the group decides to sneak away. Jamie has to learn to survive on his own, in an unfamiliar environment, populated by creatures that have long been extinct. He has no choice but to fight for his survival. The chubby young man becomes, through illness and lack of food, a thin, sinewy fighter who learns to withstand the hostile environment. This comes to a surprise to the group, who had believed that he died when they abandoned him. Although the young man had most of his memory erased, he still remembers that he was not raised by his birth parents. Unfortunately, he no longer remembers from whom. He also remembers that his mother is dead and that his father still lives although he never has met him. But this, his name and the feeling of always being an outsider is all he can remember in the beginning. Any other information is like a black hole that has been torn into his memories. In his dreams he sometimes has flashbacks of his past. Jamie is a very empathic person and has always had a good relationship with animals. Over time he gains the trust of a black Utha Raptor and befriends her. He names her Willow.
