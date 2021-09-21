@@ -4,7 +4,7 @@ name: Amiss
 owner: dolly
 image: https://img.subeta.net/pets/jollin_graveyard.png
 link: https://subeta.net/petinfo.php?petid=3694798
-date: 2021-09-20 22:00:00 +0000
+date: 2021-09-20T22:00:00.000+00:00
 category: limelight
 cw: mental illness, hospital, derealization
 
