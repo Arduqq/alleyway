@@ -4,7 +4,7 @@ name: Reveals
 owner: Whimsy
 image: https://img.subeta.net/pets/ghostly_nightmare.png
 link: https://subeta.net/petinfo.php?petid=5967535
-date: 2021-09-22 22:00:00 +0000
+date: 2021-09-22T22:00:00.000+00:00
 category: limelight
 cw: Dark subject manner, mentions of demons and use of swearwords.
 
